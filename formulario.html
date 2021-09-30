@@ -1,0 +1,97 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="estilos.css" />
+        <title>
+            Trabalhando com layout no CSS
+        </title>
+    </head>
+    <body>
+        <div class="container">
+            <nav>
+                <a href="aula.html" class="titulonav">Minha página</a>
+                <ul>
+                    <li><a href="imagem.html">Imagens</a></li>
+                    <li><a href="audio.html">Áudio</a></li>
+                    <li><a href="video.html">Vídeo</a></li>
+                    <li><a href="tabela.html">Tabelas</a></li>
+					<li><a href="formulario.html">Formulário</a></li>
+
+                  </ul>
+            </nav>
+            <section>
+                <header>
+                    <h1>Trabalhando com formulários</h1>
+                </header>
+                <article>
+                    <h1>Formulário</h1>
+                    <form name="frm_teste" method="post">
+                        <ul id="itensform">
+                            <li><label for="txt_nome">Nome: </label><input type="text" name="txt_nome" size="50" maxlength="50" autofocus required class="caixa"></li>
+                            <li><label for="txt_fone">Telefone: </label><input type="tel" name="txt_fone" size="15" maxlength="15" pattern="\([0-9]{2}\) [0-9]{4,5}-[0-9]{4}$" class="caixa"></li>
+                            <li><label for="txt_mail">E-mail: </label><input type="email" name="txt_mail" size="40" maxlength="40" required class="caixa"></li>
+                            <li><label for="txt_senha">Crie uma senha: </label><input type="password" name="txt_senha" size="16" maxlength="16" minlength="8" required class="caixa"></li>
+                            <li><label for="txt_dtesc">Data escolhida: </label><input type="date" name="txt_dtesc" class="caixa"></li>
+                            <li><label for="txt_hresc">Hora escolhida: </label><input type="time" name="txt_hresc" class="caixa"></li>
+                            <li><label for="txt_idade">Idade: </label><input type="number" name="txt_idade" min="0" max="150" class="caixa"></li>
+                            <li>&nbsp;</li>
+                            <li>Quais desses alimentos você costuma consumir?</li>
+                            <ul id="alimentos">
+                                <li><input type="checkbox" name="comida" value="a"><label for="a">Carne bovina</label></li>
+                                <li><input type="checkbox" name="comida" value="b"><label for="b">Carne suína</label></li>
+                                <li><input type="checkbox" name="comida" value="c"><label for="c">Frangos</label></li>
+                                <li><input type="checkbox" name="comida" value="d"><label for="d">Peixes</label></li>
+                                <li><input type="checkbox" name="comida" value="e"><label for="e">Legumes</label></li>
+                                <li><input type="checkbox" name="comida" value="f"><label for="f">Verduras</label></li>
+                                <li><input type="checkbox" name="comida" value="g"><label for="g">Cereais</label>
+                            </ul>
+                            <li>&nbsp;</li>
+                                <li>O significado da sigla HTML é:</li>
+                                <ul id="respostas">
+                                <li><input type="radio" name="pergunta" value="altA">Hyper Text Model Language</li>
+                                <li><input type="radio" name="pergunta" value="altB">Hyper Text Markup Language</li>
+                                <li><input type="radio" name="pergunta" value="altC">Hyper Text Model Layer</li>
+                                <li><input type="radio" name="pergunta" value="altD">Hyper Text Markup Layer</li>
+                            </ul>
+                            <li>&nbsp;</li>
+                                <li>Qual a região do Brasil que você mora? &nbsp;
+                                <select name="regiao">
+                                        <option value="sel">Selecione</option>					
+                                        <option value="s">Sul</option>
+                                        <option value="se" selected>Sudeste</option>
+                                        <option value="co">Centro-Oeste</option>
+                                        <option value="ne">Nordeste</option>
+                                        <option value="n">Norte</option>
+                                </select>
+                            </li>
+                            <li>&nbsp;</li>
+                            <li>Qual cidade da região você mora? &nbsp;
+                                <input list="cidades">
+                                    <datalist id="cidades">
+                                            <option value="apa">Aparecida</option>
+                                            <option value="gta">Guaratinguetá</option>
+                                            <option value="jac">Jacareí</option>
+                                            <option value="lor">Lorena</option>
+                                            <option value="pin">Pindamonhangaba</option>
+                                            <option value="sjc">São José dos Campos</option>
+                                            <option value="tau">Taubaté</option>
+                                        </datalist>
+                                </input>
+                            </li>
+                            <li>&nbsp;</li>
+                            <li>Deixe uma mensagem aqui: <br> <textarea name="txa_mensagem" rows="5" cols="50" maxlength="1024"></textarea>
+                            <li>&nbsp;</li>
+                            <li>
+                                <input type="submit" value="Enviar">
+                                <input type="reset" value="Limpar">
+                            </li>
+                        </ul>
+                    </form>                    
+                </article>    
+            </section>
+            <footer>
+                <p>Página desenvolvida por [Seu nome] - &copy; 2021</p>
+            </footer>
+        </div>
+    </body>
+</html>

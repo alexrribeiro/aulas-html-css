@@ -1,0 +1,22 @@
+body{
+	background-color: #CCC;
+	color: #333;
+	font-family: "Arial", "sans-serif";
+	font-size: 16px;
+}
+
+h1{
+	font-family: "Rajdhani";
+	color: #F60;
+	font-size: 36px;
+}
+
+p{
+	text-align: justify;
+	width: 80%;
+}
+
+@font-face {
+	font-family: "Rajdhani";
+	src: url("./Rajdhani-Regular.ttf");
+}

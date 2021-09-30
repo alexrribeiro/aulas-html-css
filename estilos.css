@@ -1,0 +1,180 @@
+body {
+	background-color: #CCC;
+	color: #333;
+	font-family: "Roboto";
+	font-size: 16px;
+}
+
+div.container {
+    width: 100%;
+    margin: auto;
+}
+
+nav {
+    background-color: #066;
+    padding: 1.2em;
+}
+
+nav ul {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    float: right;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    padding: 2px 10px;
+    display: inline-block;
+
+    /* visual do link */
+    color: #CCC;
+    text-decoration: none;
+    border-bottom:3px solid #CCC;
+}
+
+nav ul li a:hover {
+    background-color:#CCC;
+    color: #066;
+    border-bottom:3px solid #033;
+}
+
+.titulonav {
+    color: #CCC;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+header {
+    background-color: #AAA;
+    padding: 1px;
+}
+
+header h1 {
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 1em;
+}
+
+h1 {
+    color: #066;
+    font-size: 18px;
+}
+
+footer {
+    padding: 1em;
+    color: #CCC;
+    background-color: #066;
+    text-align: center;
+    clear: left;
+}
+
+article {
+    border: 1px solid #066;
+    border-radius: 5px;
+    padding: 1em;
+    margin: 15px;
+    text-align: justify;
+    /* height: 360px;
+    overflow: auto; */
+}
+
+@font-face {
+	font-family: "Roboto";
+	src: url("./Roboto/Roboto-Regular.ttf");
+}
+
+.foto {
+	width: 480px;
+	height: 270px;
+	float: left;
+	margin: 0 15px 15px 0;
+}
+
+.artigo {
+	background-color: rgba(192,192,192,0.5);
+    clear: both;
+    min-height: 360px;
+}
+
+figcaption {
+	font-size: 12px;
+	font-style: italic;
+	float: left;
+	clear: both;
+}
+
+.varias {
+	width: 160px;
+	height: 270px;
+	float: left;
+	margin: 0;
+}
+
+figure, video, iframe {
+	float: left;
+	margin: 0 15px 5px 0;
+}
+
+table{
+	width: 80%;
+	background-color: #C0C0C0;
+	border: 1px solid #A9A9A9;
+	margin: auto;
+	border-collapse: collapse;
+}
+
+th {
+	border: 1px solid #C0C0C0;
+	background-color: #066;
+	color: #CCC;
+	padding: 5px;
+}
+
+tr {
+	border: 1px solid #A9A9A9;
+}
+
+td {
+	border: 1px dashed #A9A9A9;
+	padding: 5px;
+}
+
+.par {
+	background-color: #D3D3D3;
+}
+
+tr:hover {
+	background-color: #79CDCD;
+}
+
+#itensform {
+    list-style: none;
+    padding-left: 0;
+}
+
+#itensform li {
+    padding-bottom: 16px;
+}
+
+#alimentos, #respostas {
+    padding-left: 10px;
+}
+
+#alimentos li, #respostas li {
+    list-style: none;
+    padding-bottom: 0;
+}
+
+.caixa {
+    position: relative;
+    left: 200px;
+}
+
+textarea {
+    resize: none;
+  }
